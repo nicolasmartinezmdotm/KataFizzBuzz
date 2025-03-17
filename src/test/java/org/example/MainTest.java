@@ -16,9 +16,15 @@ class MainTest {
 
     @Test
     void verifyIfIPassThreeTheResultShouldBeFizz() {
-
         Main.FizzBuzz fizzBuzz = new Main.FizzBuzz();
         String result = fizzBuzz.fizzBuzz(3);
         assertEquals("Fizz", result);
+    }
+
+    @Test
+    void verifyIfIPassFiveTheResultShouldBeBuzz() {
+        Main.FizzBuzz fizzBuzz = new Main.FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(5);
+        assertEquals("Buzz", result);
     }
 }
