@@ -7,11 +7,13 @@ public class Main {
 
     static class FizzBuzz {
         public String fizzBuzz(int n) {
-            if (n % 3 == 0) return "Fizz";
+            String result = "";
 
-            if (n % 5 == 0) return "Buzz";
+            if (n % 3 == 0) result += "Fizz";
 
-            return String.valueOf(n);
+            if (n % 5 == 0) result += "Buzz";
+
+            return result.isEmpty() ? n + "" : result;
         }
     }
 }
