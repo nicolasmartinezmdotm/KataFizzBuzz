@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         for (int i = 1; i <= 100; i++) {
@@ -8,14 +10,28 @@ public class Main {
     }
 
     private static String testNumber(int n) {
+        String str = "";
+
+        char[] chars = String.valueOf(n).toCharArray();
+
         if (n % 3 == 0) {
-            return "Fizz";
+            str += "Fizz";
         }
 
         if (n % 5 == 0) {
-            return "Buzz";
+            str += "Buzz";
         }
 
-        return n + "";
+        for (char c : chars) {
+            if (c == '3') {
+                str += "Fizz";
+            }
+
+            if (c == '5') {
+                str += "Buzz";
+            }
+        }
+
+        return str.isEmpty() ? n + "" : str;
     }
 }
