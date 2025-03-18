@@ -34,4 +34,11 @@ class MainTest {
         String result = fizzBuzz.fizzBuzz(15);
         assertEquals("BuzzFizzBuzz", result);
     }
+
+    @Test
+    void verifyIfIPassEightTeenTheResultShouldBeFizz() {
+        Main.FizzBuzz fizzBuzz = new Main.FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(18);
+        assertEquals("Fizz", result);
+    }
 }
