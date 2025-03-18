@@ -20,4 +20,11 @@ class MainTest {
         String result = fizzBuzz.fizzBuzz(3);
         assertEquals("FizzFizz", result);
     }
+
+    @Test
+    void verifyIfIPassFiveTheResultShouldBeBuzzBuzz() {
+        Main.FizzBuzz fizzBuzz = new Main.FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(5);
+        assertEquals("BuzzBuzz", result);
+    }
 }
