@@ -41,4 +41,11 @@ class MainTest {
         String result = fizzBuzz.fizzBuzz(18);
         assertEquals("Fizz", result);
     }
+
+    @Test
+    void verifyIfIPassFiftyThreeTheResultShouldBeBuzzFizz() {
+        Main.FizzBuzz fizzBuzz = new Main.FizzBuzz();
+        String result = fizzBuzz.fizzBuzz(53);
+        assertEquals("BuzzFizz", result);
+    }
 }
