@@ -13,6 +13,8 @@ public class Main {
 
             for (char c : numbers) {
                 if (c == '3') result += "Fizz";
+
+                if (c == '5') result += "Buzz";
             }
 
             if (n % 3 == 0) result += "Fizz";
